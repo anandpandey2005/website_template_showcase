@@ -1,0 +1,50 @@
+[
+  {
+    "id": "novasaas",
+    "name": "NovaSaaS - Dark Mode Landing Page",
+    "category": "SaaS",
+    "description": "Modern high-converting SaaS landing page with dark mode, interactive pricing table, feature grids, and smooth animations.",
+    "tech": ["HTML5", "CSS3", "JavaScript"],
+    "price": "$49",
+    "status": "Available",
+    "demoUrl": "https://example.com/demo/novasaas",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    "featured": true
+  },
+  {
+    "id": "aurastore",
+    "name": "AuraStore - Minimal E-Commerce",
+    "category": "E-Commerce",
+    "description": "Clean and minimal e-commerce storefront layout featuring product galleries, cart UI, checkout modal, and responsive filter sidebar.",
+    "tech": ["HTML5", "CSS3", "JavaScript"],
+    "price": "$79",
+    "status": "Available",
+    "demoUrl": "https://example.com/demo/aurastore",
+    "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80",
+    "featured": true
+  },
+  {
+    "id": "apexagency",
+    "name": "ApexAgency - Modern Portfolio",
+    "category": "Portfolio",
+    "description": "Sleek agency portfolio template with project case studies, client testimonial carousel, and interactive contact form.",
+    "tech": ["HTML5", "CSS3", "JavaScript"],
+    "price": "$39",
+    "status": "Available",
+    "demoUrl": "https://example.com/demo/apexagency",
+    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    "featured": false
+  },
+  {
+    "id": "bistroflow",
+    "name": "BistroFlow - Restaurant & Booking",
+    "category": "Business",
+    "description": "Elegant restaurant website with online menu showcase, table reservation modal, chef spotlight, and location map integration.",
+    "tech": ["HTML5", "CSS3", "JavaScript"],
+    "price": "$59",
+    "status": "Available",
+    "demoUrl": "https://example.com/demo/bistroflow",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+    "featured": false
+  }
+]

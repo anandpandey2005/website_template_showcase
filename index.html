@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebCraft Marketplace | Premium Website Templates & Live Demos</title>
+  <meta name="description" content="Browse, preview, and purchase high-quality website templates with live demos and clean source code.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="brand">
+        <div class="brand-icon">⚡</div>
+        <div class="brand-text">Web<span>Craft</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="https://github.com/anandpandey2005/website-template" target="_blank" class="btn btn-secondary">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          GitHub Repo
+        </a>
+        <a href="#contact" class="btn btn-primary">Custom Order</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    header class="hero">
+      <div class="hero-tag">✨ Live Website Portfolio & Store</div>
+      <h1 class="hero-title">
+        Premium Websites & Templates<br>
+        <span class="gradient-text">Built for Fast Launch</span>
+      </h1>
+      <p class="hero-subtitle">
+        Explore ready-to-use websites with working live demos. Inspect design, test performance, and acquire full source code or request custom setups.
+      </p>
+    </header>
+
+    <!-- Filter & Search Controls -->
+    <div class="controls-bar">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search templates by name or tech stack...">
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="All">All Sites</button>
+        <button class="filter-btn" data-category="SaaS">SaaS</button>
+        <button class="filter-btn" data-category="E-Commerce">E-Commerce</button>
+        <button class="filter-btn" data-category="Portfolio">Portfolio</button>
+        <button class="filter-btn" data-category="Business">Business</button>
+      </div>
+    </div>
+
+    <!-- Showcase Grid -->
+    <main class="showcase-grid" id="showcaseGrid">
+      <!-- Dynamically populated via JavaScript -->
+    </main>
+
+    <!-- Contact & Purchase Info -->
+    <section id="contact" style="padding: 60px 0; border-top: 1px solid var(--border-light);">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 32px; margin-bottom: 16px;">
+          Want to Purchase a Template or Request a Custom Build?
+        </h2>
+        <p style="color: var(--text-secondary); margin-bottom: 30px;">
+          Simply copy the Website Name and contact me. Instant delivery includes complete source code, documentation, and free deployment support!
+        </p>
+
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="mailto:your.email@example.com?subject=Website%20Purchase%20Inquiry" class="btn btn-primary" style="padding: 14px 28px; font-size: 16px;">
+            ✉️ Email Inquiry
+          </a>
+          <button onclick="copyContactInfo()" class="btn btn-secondary" style="padding: 14px 28px; font-size: 16px;">
+            📋 Copy Contact Handle
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 WebCraft Marketplace. Built by <a href="https://github.com/anandpandey2005" target="_blank">Anand Pandey</a>.</p>
+    </footer>
+  </div>
+
+  <!-- Inquiry Modal -->
+  <div class="modal-overlay" id="inquiryModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h3 id="modalTitle" style="font-family: 'Outfit', sans-serif; font-size: 24px; margin-bottom: 12px; color: var(--text-primary);">
+        Inquire About Website
+      </h3>
+      <p id="modalDesc" style="color: var(--text-secondary); margin-bottom: 20px; font-size: 14px;">
+        Fill out the details below to purchase this site or request customizations.
+      </p>
+
+      <form id="inquiryForm" onsubmit="handleFormSubmit(event)">
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">Your Name</label>
+          <input type="text" required placeholder="John Doe" style="width: 100%; padding: 10px; background: rgba(0,0,0,0.3); border: 1px solid var(--border-light); border-radius: var(--radius-sm); color: #fff; outline: none;">
+        </div>
+        <div style="margin-bottom: 16px;">
+          <label style="display: block; font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">Your Email</label>
+          <input type="email" required placeholder="john@example.com" style="width: 100%; padding: 10px; background: rgba(0,0,0,0.3); border: 1px solid var(--border-light); border-radius: var(--radius-sm); color: #fff; outline: none;">
+        </div>
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">Message / Customization Requests</label>
+          <textarea rows="3" placeholder="I would like to purchase this template or customize..." style="width: 100%; padding: 10px; background: rgba(0,0,0,0.3); border: 1px solid var(--border-light); border-radius: var(--radius-sm); color: #fff; outline: none; resize: vertical;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Inquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Application Script -->
+  <script>
+    const fallbackSites = [
+      {
+        id: "novasaas",
+        name: "NovaSaaS - Dark Mode Landing Page",
+        category: "SaaS",
+        description: "Modern high-converting SaaS landing page with dark mode, interactive pricing table, feature grids, and smooth animations.",
+        tech: ["HTML5", "CSS3", "JavaScript"],
+        price: "$49",
+        status: "Available",
+        demoUrl: "https://example.com/demo/novasaas",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        id: "aurastore",
+        name: "AuraStore - Minimal E-Commerce",
+        category: "E-Commerce",
+        description: "Clean and minimal e-commerce storefront layout featuring product galleries, cart UI, checkout modal, and responsive filter sidebar.",
+        tech: ["HTML5", "CSS3", "JavaScript"],
+        price: "$79",
+        status: "Available",
+        demoUrl: "https://example.com/demo/aurastore",
+        image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        id: "apexagency",
+        name: "ApexAgency - Modern Portfolio",
+        category: "Portfolio",
+        description: "Sleek agency portfolio template with project case studies, client testimonial carousel, and interactive contact form.",
+        tech: ["HTML5", "CSS3", "JavaScript"],
+        price: "$39",
+        status: "Available",
+        demoUrl: "https://example.com/demo/apexagency",
+        image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        id: "bistroflow",
+        name: "BistroFlow - Restaurant & Booking",
+        category: "Business",
+        description: "Elegant restaurant website with online menu showcase, table reservation modal, chef spotlight, and location map integration.",
+        tech: ["HTML5", "CSS3", "JavaScript"],
+        price: "$59",
+        status: "Available",
+        demoUrl: "https://example.com/demo/bistroflow",
+        image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+      }
+    ];
+
+    let allSites = [];
+    let currentCategory = 'All';
+
+    async function loadSites() {
+      try {
+        const response = await fetch('./sites.json');
+        if (response.ok) {
+          allSites = await response.json();
+        } else {
+          allSites = fallbackSites;
+        }
+      } catch (err) {
+        allSites = fallbackSites;
+      }
+      renderSites();
+    }
+
+    function renderSites() {
+      const grid = document.getElementById('showcaseGrid');
+      const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+
+      const filtered = allSites.filter(site => {
+        const matchesCategory = currentCategory === 'All' || site.category === currentCategory;
+        const matchesSearch = site.name.toLowerCase().includes(searchQuery) ||
+                              site.description.toLowerCase().includes(searchQuery) ||
+                              site.tech.some(t => t.toLowerCase().includes(searchQuery));
+        return matchesCategory && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 60px 0; color: var(--text-secondary);">
+            <h3>No websites match your search or filter.</h3>
+            <p>Try searching for different keywords or select "All Sites".</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(site => `
+        <article class="card">
+          <div class="card-image">
+            <img src="${site.image}" alt="${site.name}" loading="lazy">
+            <span class="card-category">${site.category}</span>
+            <span class="card-badge ${site.status.toLowerCase()}">${site.status}</span>
+          </div>
+
+          <div class="card-content">
+            <h3 class="card-title">${site.name}</h3>
+            <p class="card-description">${site.description}</p>
+
+            <div class="card-tech">
+              ${site.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+            </div>
+
+            <div class="card-footer">
+              <div class="card-price">${site.price}</div>
+              <div class="card-actions">
+                <a href="${site.demoUrl}" target="_blank" class="btn btn-secondary" style="padding: 6px 12px; font-size: 12px;">
+                  🌐 View Demo
+                </a>
+                <button onclick="openInquiryModal('${site.name}')" class="btn btn-primary" style="padding: 6px 12px; font-size: 12px;">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // Filter Buttons Listener
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        currentCategory = e.target.getAttribute('data-category');
+        renderSites();
+      });
+    });
+
+    // Search Input Listener
+    document.getElementById('searchInput').addEventListener('input', renderSites);
+
+    // Modal Functions
+    function openInquiryModal(siteName) {
+      document.getElementById('modalTitle').textContent = `Inquire about ${siteName}`;
+      document.getElementById('inquiryModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('inquiryModal').classList.remove('active');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert('Thank you for your inquiry! The seller will reach out to you shortly.');
+      closeModal();
+    }
+
+    function copyContactInfo() {
+      navigator.clipboard.writeText('your.email@example.com');
+      alert('Contact email copied to clipboard!');
+    }
+
+    // Initialize
+    loadSites();
+  </script>
+</body>
+</html>
