@@ -1,6 +1,6 @@
 [
   {
-    "id": "ap-tech-solutions",
+    "id": "ap-tech-solutions-tmp1",
     "name": "AP Tech Solutions - Digital Agency",
     "category": "Digital Agency",
     "description": "Premium digital agency and marketing template featuring dark mode typography, smooth animations, service offerings, work portfolio, and contact integration.",
@@ -8,6 +8,18 @@
     "price": "Available",
     "status": "Live",
     "demoUrl": "https://website-template-two-mu.vercel.app/",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    "featured": true
+  }
+  {
+    "id": "ap-tech-solutions-tmp2",
+    "name": "AP Tech Solutions - media solutions",
+    "category": "media solutions ",
+    "description": "Outdoor Media & Advertising Solutions",
+    "tech": ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    "price": "Available",
+    "status": "Live",
+    "demoUrl": "https://website-template-2-indol.vercel.app/",
     "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
     "featured": true
   }
