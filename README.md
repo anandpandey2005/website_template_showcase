@@ -9,6 +9,7 @@ A curated collection of modern, responsive website templates and web project dem
 | Project / Template | Category | Tech Stack | Status | Live Output |
 | :--- | :--- | :--- | :---: | :---: |
 | **AP Tech Solutions**<br>Digital Agency Template | Digital Agency | Next.js, React, Tailwind CSS | Live | [View Live Website](https://website-template-two-mu.vercel.app/) |
+| **AP Tech Solutions**<br>media solutions | media solutions | Next.js, React, Tailwind CSS | Live | [View Live Website]([https://website-template-two-mu.vercel.app/](https://website-template-2-indol.vercel.app/)) |
 
 ---
 
